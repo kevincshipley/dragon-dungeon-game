@@ -26,5 +26,14 @@ class Class:
         return self.health
 
 peasant = Class("Peasant", 0, 0, 1)
+rogue = Class("Rogue", 3, 12, 10)
+ranger = Class("Ranger", 2, 12, 12)
+warrior = Class("Warrior", 1, 14, 14)
+wizard = Class("Wizard", 0, 10, 10)
 
-print("You're a", peasant.getName())
+player = wizard
+
+print("You're a", player.getName())
+print("Attack:", player.getAttack())
+print("Armor:", player.getArmor())
+print("Health:", player.getHealth())
